@@ -21,6 +21,6 @@ def suggestion_view(request):
                 ['abdo@kaumer.com']
             )
             messages.add_message(request, messages.SUCCESS,
-                                 'thanks for your suggestion!')
+                'thanks for your suggestion!')
             return HttpResponseRedirect(reverse('suggestion'))
     return render(request, 'suggestion_form.html', {'form': form})
