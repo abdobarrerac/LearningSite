@@ -17,7 +17,7 @@ class TrueFalseQuestionForm(forms.ModelForm):
         model = models.TrueFalseQuestion
         fields = ['order', 'prompt']
 
-class MultipleChoiceQuestion(forms.ModelForm):
+class MultipleChoiceQuestionForm(forms.ModelForm):
     class Meta:
         model = models.MultipleChoiceQuestion
         fields = [
