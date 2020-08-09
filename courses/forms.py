@@ -20,10 +20,12 @@ class QuestionForm(forms.ModelForm):
             'courses/js/order.js'
         )
 
+
 class TrueFalseQuestionForm(QuestionForm):
     class Meta:
         model = models.TrueFalseQuestion
         fields = ['order', 'prompt']
+
 
 class MultipleChoiceQuestionForm(QuestionForm):
     class Meta:
