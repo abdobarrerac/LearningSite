@@ -9,7 +9,8 @@ class Course(models.Model):
     description = models.TextField()
     teacher = models.ForeignKey(User)
     subject = models.CharField(default='', max_length=100)
-    
+    published = models.BooleanField(default=False)
+
     def __str__(self):
         return self.title
 
